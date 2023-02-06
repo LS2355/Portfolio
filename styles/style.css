@@ -233,7 +233,7 @@ main > article > .article-nav-section {
 }
 
 main > article:first-child > .article-image-section {
-  background-image: url("../../resources/slideshow/Tower_Bridge_Sacramento_edit.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tower_Bridge_Sacramento_edit.jpg/1920px-Tower_Bridge_Sacramento_edit.jpg");
   background-size: cover;
 }
 

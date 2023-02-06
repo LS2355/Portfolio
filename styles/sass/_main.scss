@@ -54,7 +54,7 @@
   }
   
   main > article:first-child > .article-image-section {
-    background-image: url("../../resources/slideshow/Tower_Bridge_Sacramento_edit.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tower_Bridge_Sacramento_edit.jpg/1920px-Tower_Bridge_Sacramento_edit.jpg");
     background-size: cover;
   }
   
@@ -341,8 +341,6 @@ border-radius: 3px;
       font-size: 2rem; 
     }
     
-    main > article > .article-description-section {
-    }
     
     main > article > .article-description-section > p {
       font-size: 0.8rem;
