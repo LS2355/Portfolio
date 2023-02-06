@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio V3</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+          <div class="logo-text  under-score">></div>
+          <div class="logo-text">PORTFOLIO</div>
+          <div class="logo-text animate__animated animate__flash under-score" id="under-score-a">_</div>
+        </div>
+        <div id="nav-mobile-section">
+          <div id="nav-link-section" class="nav-section">
+            <a href="#" onclick="Nav(0)">ABOUT</a>
+            <a href="#" onclick="Nav(2)">SKILLS</a>
+            <a href="#" onclick="Nav(4)">PROJECTS</a>
+          </div>
+          <div id="nav-social-section" class="nav-section">
+            <a href="https://www.linkedin.com/in/luis-o-salcedo/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" onclick="phoneOpen()">
+              <i class="fa-sharp fa-solid fa-mobile"></i>
+            </a>    
+            <a href="https://github.com/LS2355" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:LS_WS_23@hotmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+          <div id="nav-contact-section" class="nav-section">
+                <svg width="20" height="20" fill="white"viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
+                  </svg>
+                <h3>GET IN TOUCH</h3>
+          </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button> 
+        
+        <div class="phone-number">(916) 897 - 6952
+          <button onclick="phoneClose()"><i class="fa-solid fa-x"></i></button>
+           
+        </div>
+
+      </nav>
+      
+      <main>
+        <article data-index="0" data-status="active" id="about">
+          <div class="article-image-section article-section">
+          </div>
+          <div class="article-description-section article-section">
+            <h1>Bio</h1>
+            <p>
+              Name: Luis Salcedo<br />
+              Located: Sacramento, CA<br />
+              Born: 22nd of June<br />
+            </p>
+            <h1>Location</h1>
+            <p>
+              I was born and raised in sacramento, CA<br />
+              (when I was little I thought this was the golden gate bridge)<br /><br />
+            </p>
+            <h1>Passions / Hobbies</h1>
+            <p>Off-Roading:<br />
+            Riding has always been a big part of my life, I started riding motorcycles when I was
+            about 6 years old. </p>
+            <p class="padding-tb">Gaming / Technology:<br />
+            Playing Zombie games with my cousins are the best memories I have of my childhood, and it something that I still like to do on my free time.
+             Technology has always facinated me, I loved pokeing at things and tearing them apart (screwdriver or Hammer)
+             just so I can see how things work.</p>
+
+             <p class="padding-tb">Nature<br />
+             Being in the middle of nature is one of the most relaxing things one can experience,
+              wether it's camping, Hikeing, Swimming, or just stering at the vastness that is outer Space
+              there is always something that you can do out there
+             </p><br />
+
+          </div>
+          <div class="article-title-section article-section">
+            <h2><spam></spam>Welcome <br />Luis Salcedo</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="LeftClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="RightClick()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+                <!--School/ EDU-->
+        <article data-index="1" data-status="inactive">    
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h1 class="padding-tb">UC Davis</h1>
+            <p>I recived my Full-stack Developer certificate from UC davis in december of 2022.
+              During this course I learned Frontend development which includes HTML, CSS, and Javascript.
+              As well as Backend developmentm, which is more of how servers and databases are ran using laguages like MYSQL.
+              but most importantly I learned a new way of thinking about problems, theory, and how to brakedown seemingly 
+              impossible problems to something that I can work with. <br /><br />
+            </p>
+
+            <h1 class="padding-tb">Sacramento City Collage</h1>
+            <p>I began my attendence of SCC in the fall of 2021 and remained there until the summer of 2022.
+              I majored in computer science. I learned a lot here including the internet of things and was introduced to c++ .
+              This is where I became sure that software engineering was the correct field for me. <br /><br />
+            </p>
+            <h1 class="padding-tb">Montery Trail HS</h1>
+            <p>During High School I attended a platnium based academy, where I took nothing but computer science electives all four years.
+              The acadamy was called DATA which stood for Design And Technology Acadamy. during my junior year I joined the cyber security club, 
+              and took my first coding class ever.<br /><br /></p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>Schooling / education</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="LeftClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="RightClick()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+                <!-- skills -->
+        <article data-index="2" data-status="inactive">    
+          <div class="article-skills-section article-section" id="cards">
+            
+            <div class="card" id="G1">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-html-5.svg">
+                  <h3>HTML</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G2">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-css3-96.png">
+                  <h3>CSS</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G3">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-javascript.svg">
+                  <h3>Java Script</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G4">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-sass-avatar.svg">
+                  <h3>SASS</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G5">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-mysql-logo.svg">
+                  <h3>MySQL</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G6">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-node-js.svg">
+                  <h3>NODE</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G7">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-jest-can-collect-code-coverage-information-from-entire-projects-96.png">
+                  <h3>JEST</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G8">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/expressjs-icon.svg">
+                  <h3>Express</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="G9">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-jquery.svg">
+                  <h3>JQuery</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT0">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-bootstrap.svg">
+                  <h3>Bootstrap</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT1">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-clock.svg">
+                  <h3>Moment</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT2">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-git.svg">
+                  <h3>Git</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT3">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-github.svg">
+                  <h3>Git Hub</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT4">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/icons8-handlebar-mustache-100.png">
+                  <h3>Handlebars</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT5">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/inquirer.svg">
+                  <h3>Inquirer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT6">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/external-json-microservices-soft-fill-soft-fill-juicy-fish.png">
+                  <h3>JSON</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="GT7">
+              <div class="card-content">
+                <div>
+                  <img src="./resources/skills/rest-api-icon.svg">
+                  <h3>RESTful <br />API</h3>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="article-description-section article-section">
+            <h1>experience</h1>
+            <p>I have 2 + years of experience in software development<br /><br /></p>
+            <h1>Languages</h1>
+            <p>HTML<br />
+               JavaScript<br />
+               CSS<br />
+               MySql<br />
+               SASS<br />
+            </p>
+            <h1>NODE</h1>
+            <p>NODE<br />
+               Express<br />
+               Inquirer<br />
+            </p>
+            <h1>FrameWorks</h1>
+            <p>JQuery<br />
+               Moment<br />
+               Bootstrap<br />
+               handlebars<br />
+            </p>
+            <h1>Version Control</h1>
+            <p>
+              GitHub<br />
+              Git<br />
+            </p>
+            <h1>Testing</h1>
+            <p>Jest<br /></p>
+            <h1>Other</h1>
+            <p>
+              Restful API<br />
+              JSON<br />
+            </p>
+          </div>
+          <div class="article-title-section article-section top-border"><!--top border class-->
+              <h2>// CODING <br />HARD SKILLS</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="LeftClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="RightClick()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+                <!--Work-->
+        <article data-index="3" data-status="inactive"> 
+          <div class="article-image-section article-section"></div>
+          <div class="article-description-section article-section">
+            <h1>Looking For</h1>
+            <p>
+              I am currently looking for a software development job. Specificly as a Frontend or Full-stack Javascript developer.
+            </p><br />
+            <h1 class="padding-tb">Me as a worker</h1>
+            <p>I am an extreamly hard working person. I can be relied upon to complate a task on time with flying colors.
+              Thanks to my work history I learned what it takes to help a company succeed and carry out their goals.
+               My attendence is something that you will not be dissapointed with, as well as me being able to work more that 12 hours a day.</p><br />
+            <h1 class="padding-tb">Work history</h1>
+            <p class="padding-tb">SALCEDO PLASTERING - PROJECT MANAGER<br />
+              I started working in construction in my junior year of highschool. I took my time to master the trade so that I could make my way up the company,
+               and eventually landed a position as a Project Manager.
+               I was in charge of 6 guys in my crew. my daily schedul mostly consisted of hard labor, product management, customer service,
+              employee managment, and over all just making sure the job was done right and customers where happy. 
+              <br /><br />
+          </div>
+          <div class="article-title-section article-section">
+            <h2>WORK <br />Persutes / history</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="LeftClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="RightClick()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+                <!--Projects-->
+        <article data-index="4" data-status="inactive">    
+          <div class="article-project-section article-section">
+              <div class="projects" id="project1">
+                <img src="./resources/slideshow/projects/zookeeper.png" alt="">
+                <div class="project-text">
+                  
+                  <div class="project-title">ZOO KEEPR</div>
+                  <div class="project-description">
+                    zoo keeper is a zoo catalog where workers can add new employes or animals to the zoo's api. they can be searched by name, species, diet, and/or charactaristics.
+                    <div class="stacks"><div class="stack">&lt SASS &gt</div><div class="stack">&lt HTML &gt</div><div class="stack">&lt Javascript &gt</div></div>
+                  </div>
+                  <div class="project-btns">
+                    <a href="#"><button class="project-gitHub"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="#"><button class="project-visit">Visit Page</button></a>
+                  </div>
+                  
+                </div>
+              </div>
+            
+
+              <div class="projects" id="project2">
+                <img src="./resources/slideshow/projects/Porrfolio.png" alt="">
+                <div class="project-text">
+                  
+                  <div class="project-title">PORTFOLIO</div>
+                  <div class="project-description">
+                    I created my portfolio as a place where people / employers can view my work, as well as where I could demonstrate my skills. This Design was inspired by a youtuber named "Hyperplexed".<br /> 
+                    <div class="stacks"><div class="stack">&lt SASS &gt</div><div class="stack">&lt HTML &gt</div><div class="stack">&lt Javascript &gt</div></div>
+                  </div>
+
+                  <div class="project-btns">
+                    <a href="#"><button class="project-gitHub"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="#"><button class="project-visit">Visit Page</button></a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="projects" id="project3">
+                <img src="./resources/slideshow/projects/Porrfolio.png" alt="">
+                <div class="project-text">
+                  
+                  <div class="project-title">PORTFOLIO</div>
+                  <div class="project-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat fugit perferendis
+                    <div class="stacks"><div class="stack">&lt SASS &gt</div><div class="stack">&lt HTML &gt</div><div class="stack">&lt Javascript &gt</div></div>
+                  </div>
+                  <div class="project-btns">
+                    <a href="#"><button class="project-gitHub"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    <a href="#"><button class="project-visit">Visit Page</button></a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="projects" id="project4">
+                <img src="./resources/slideshow/projects/Porrfolio.png" alt="">
+                <div class="project-text">
+                  
+                  <div class="project-title">JME</div>
+                  <div class="project-description">
+                    COMING SOON
+                  </div>
+                  
+                </div>
+              </div>
+
+            
+          </div>
+          <div class="article-description-section article-section">
+            <h1>The 4 Projects</h1>
+            <p>
+              I have chose to only display four of my most recent projects.<br />
+              -The left two are Projets that I created in School.<br />
+              -The one on the top right is what you are looking at currently.<br />
+              -Lastly on the bottom right is a project the I was Hired to do<br />
+
+            </p>
+            <h1>What's all this?</h1>
+            <p>within each quadrent you will find a <br />
+              project Name<br />
+              short description<br />
+              stack used<br />
+              Git button: this will take you to the github page where you can view the source code<br />
+              visit button: this will take you to the project website where you can look at it for your self<br />
+
+            </p>
+            <h1>Why did I make this</h1>
+            <p>I created this slide to demonstrate my work as a software engineer, to hopfully get my foot into the door with mt first development job.<br /></p>
+            <h1>Thank You</h1>
+            <p>Thanks for checking out my Portfolio! feel free to look around and have a good day.( or night )</p>
+          </div>
+          <div class="article-title-section article-section">
+            <h2>PROJECTS</h2>
+            <i class="fa-light fa-plus-large"></i>
+          </div>
+          <div class="article-nav-section article-section">
+            <button class="article-nav-button" type="button" onclick="LeftClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="article-nav-button" type="button" onclick="RightClick()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </main>
+
+
+</body>
+<script src="https://kit.fontawesome.com/5e32cb1daf.js" crossorigin="anonymous"></script>
+<script src="./articalHandler.js"></script>
+</html>

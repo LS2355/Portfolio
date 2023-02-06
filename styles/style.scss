@@ -1,0 +1,48 @@
+    $background-color: rgb(20,20,20);
+    $border-color: rgba(255, 255, 255, 0.178); //decided not to use
+    $highlight-color: rgb(126, 87, 194);
+    $card-color: rgb(23,23,23);
+
+
+
+      
+      body{
+        background-color: $background-color;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0px;
+        overflow: hidden;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      h1, h2, h3, a, p, span {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        color: white;
+        margin: 0px;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: $highlight-color;
+      }
+
+      .padding-tb{
+        padding: 5px 0px
+      }
+
+// nav bar 
+@import "./sass/nav";
+//main content
+@import "./sass/main";
+// Skills Section
+@import "./sass/skills";
+// Projects section
+@import "./sass/projects";
