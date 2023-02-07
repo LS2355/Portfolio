@@ -31,20 +31,6 @@ font-size: x-large;
 margin-right: auto;
 
 }
-.stacks{
-    margin-top: 15px;
-    padding: 2px 5px;
-    display: flex;
-    justify-content: center;
-
-}
-.stack{
-    padding: inherit;
-    margin: 0px 5px;
-    background-color: rgba(126, 87, 194, 0.192);
-    border: 1px solid lightgray;
-    border-radius: 2px;
-}
 .project-title{
     top: 15px;
     right: 10px;
@@ -115,10 +101,12 @@ fill: lightgray;
       border-top-left-radius: 9px;
       border-top: 2px solid $border-color;
       border-left: 2px solid $border-color;
+      overflow: hidden;
       img{
+        overflow: hidden;
         border-top-left-radius: 9px;
-        filter: blur(15px);
-        -webkit-filter: blur(15px);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
       }
       .project-text > .project-description{
         font-size: xx-large;
@@ -130,12 +118,6 @@ fill: lightgray;
  @media (max-width: 1400px){
     .project-description{
         font-size: 1.2rem;
-    }
- }
-
- @media (max-width:960px){
-    .stacks{
-        display: none;
     }
  }
  @media (max-width:800px){
